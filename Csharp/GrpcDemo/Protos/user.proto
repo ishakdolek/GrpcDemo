@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcDemo.Protos";
+
+message UserRequest {
+		int32 id = 1;
+}
+
+message UserModel {
+	string name = 1;
+	string adress =2;
+	int32 age = 3;
+}
+
+message UserModelResult{
+	string message = 1;
+}
+
+message UserDetail {
+	UserModel usermodel = 1;
+	repeated UserPhone uphone = 2;
+}
+
+message UserPhone {
+	string fax =1;
+	string skypeid =2;
+}
+
+service User
+{
+	rpc GetUserInfo(UserRequest) returns (UserModel);
+	rpc CreateUser(UserModel) returns(UserModelResult);
+	rpc CreateUserDetail(UserDetail) returns(UserModelResult);
+}

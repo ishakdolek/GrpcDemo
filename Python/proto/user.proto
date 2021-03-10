@@ -1,0 +1,19 @@
+
+syntax = "proto3";
+
+package demo4;
+
+message User {
+  int32 id = 1;
+  string name = 2;
+}
+
+message UserInfo {
+  int32 age = 1;
+  string address = 2;
+  string phoneNumber = 3;  
+}
+
+service UserService {
+    rpc GetUserInfo (User) returns (UserInfo) {}
+}
