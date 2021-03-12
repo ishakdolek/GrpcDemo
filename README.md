@@ -5,6 +5,7 @@
 * https://grpc.io/docs/languages/python/basics/
 * https://realpython.com/python-microservices-grpc/
 * https://towardsdatascience.com/implementing-grpc-server-using-python-9dc42e8daea0
+* https://hammad-ulhaq.medium.com/build-high-performance-services-with-grpc-and-net-5-part-2-92c4561b8ac2
 
 # Video
 * https://www.youtube.com/watch?v=D2mP5vWtVL4
